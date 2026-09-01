@@ -13,6 +13,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketing-integration-site.vercel.app", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "voiceshield", name: "VoiceShield Protocol", url: "https://voiceshield-protocol.vercel.app", group: "products", desc: "AI voice-clone scam defense ($27) — landing + gated downloads + admin" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
