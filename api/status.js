@@ -14,6 +14,9 @@ const TOOLS = [
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketing-integration-site.vercel.app", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
   { id: "voiceshield", name: "VoiceShield Protocol", url: "https://voiceshield-protocol.vercel.app", group: "products", desc: "AI voice-clone scam defense ($27) — landing + gated downloads + admin" },
+  { id: "dermcode", name: "DermCode — PDRN Glow Protocol", url: "https://dermcode.vercel.app", group: "products", desc: "PDRN skincare ($19) — landing + order admin + gated downloads" },
+  { id: "habitbloom", name: "HabitBloom", url: "https://habitbloom.vercel.app", group: "products", desc: "Habit-building system ($27) — landing + payments + thank-you" },
+  { id: "dopamine-reset", name: "Dopamine Reset", url: "https://dopamine-reset-theta.vercel.app", group: "products", desc: "Dopamine detox program ($27) — landing + payments + thank-you" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
