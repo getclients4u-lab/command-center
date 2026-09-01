@@ -17,6 +17,7 @@ const TOOLS = [
   { id: "dermcode", name: "DermCode — PDRN Glow Protocol", url: "https://dermcode.vercel.app", group: "products", desc: "PDRN skincare ($19) — landing + order admin + gated downloads" },
   { id: "habitbloom", name: "HabitBloom", url: "https://habitbloom.vercel.app", group: "products", desc: "Habit-building system ($27) — landing + payments + thank-you" },
   { id: "dopamine-reset", name: "Dopamine Reset", url: "https://dopamine-reset-theta.vercel.app", group: "products", desc: "Dopamine detox program ($27) — landing + payments + thank-you" },
+  { id: "seo-launchpad", name: "SEO Launchpad", url: "https://seo-launchpad-eta.vercel.app", group: "tools", desc: "Audit · Optimize · Deploy console (permanent Vercel URL via tunnel proxy)" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
