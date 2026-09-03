@@ -21,6 +21,7 @@ const TOOLS = [
   { id: "seo-launchpad", name: "SEO Launchpad", url: "https://seo-launchpad-eta.vercel.app", group: "tools", desc: "Audit · Optimize · Deploy console (permanent Vercel URL via tunnel proxy)" },
   { id: "empire-stack", name: "Empire Stack", url: "https://empire-stack.vercel.app", group: "tools", desc: "One URL, every tool — the complete local lead-gen machine hub" },
   { id: "empire-hq", name: "Empire HQ", url: "https://empire-hq-beta.vercel.app", group: "tools", desc: "Morning briefing — run-rate, cash, streak, daily move from LeadFlow + Commission Ledger CSVs" },
+  { id: "affiliate-launch-radar", name: "Affiliate Launch Radar", url: "https://affiliate-launch-radar.vercel.app", group: "affiliate", desc: "Next 14 days of affiliate launches (Muncheye) — commission math, Claw-wave & whale alerts" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
