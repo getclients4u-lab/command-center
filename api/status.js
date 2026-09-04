@@ -13,6 +13,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketing-integration-site.vercel.app", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "secondbloom", name: "SecondBloom", url: "https://secondbloom-glow.vercel.app", group: "products", desc: "The Second Bloom Method — 8-tool perimenopause ('second puberty') system, 9" },
   { id: "fallform", name: "FallForm", url: "https://fallform.vercel.app", group: "products", desc: "The 14-Day September Reset System — F.A.L.L. Method for home, routines, food, money & Q4" },
   { id: "gutmap", name: "GutMap — FODMAP Freedom Protocol", url: "https://gutmap.vercel.app", group: "products", desc: "FODMAP/IBS gut protocol (9) — landing + order admin + gated downloads" },
   { id: "voiceshield", name: "VoiceShield Protocol", url: "https://voiceshield-protocol.vercel.app", group: "products", desc: "AI voice-clone scam defense ($27) — landing + gated downloads + admin" },
