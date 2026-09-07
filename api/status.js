@@ -1,8 +1,8 @@
 // Master Dashboard status API — pings every tool in the fleet and returns live status
 const TOOLS = [
-  { id: "agent-dashboard", name: "Agent Dashboard", url: "https://agent-dashboard-six-weld.vercel.app", group: "fleet", desc: "6-agent fleet status w/ 4-tier failover" },
+  { id: "agent-dashboard", name: "Agent Dashboard", url: "https://agent-dashboard-teal-psi.vercel.app", group: "fleet", desc: "6-agent fleet status w/ 4-tier failover" },
   { id: "skill-landing", name: "Skill Landing Page", url: "https://openclaw-agent-dashboard-failover.vercel.app", group: "fleet", desc: "Agent Dashboard Failover skill funnel" },
-  { id: "agent-ctl", name: "Agent Control API", url: "https://agent-dashboard-six-weld.vercel.app/api/status", group: "fleet", desc: "Live fleet status (6 agents, 4-tier failover)" },
+  { id: "agent-ctl", name: "Agent Control API", url: "https://agent-dashboard-teal-psi.vercel.app/api/status", group: "fleet", desc: "Live fleet status (6 agents, 4-tier failover)" },
   { id: "zarmi", name: "ZarMi Bra Boutique", url: "https://zarmibraboutique.vercel.app", group: "sites", desc: "Client storefront (espresso/mauve/ivory/gold)" },
   { id: "everlasting", name: "Everlasting Memories", url: "https://myeverlastingmemories.com", group: "sites", desc: "Client event business + 35 build tools" },
   { id: "futureready", name: "Future Ready US", url: "https://www.futurereadyus.com", group: "sites", desc: "Client site (IndexNow + GSC fixed)" },
