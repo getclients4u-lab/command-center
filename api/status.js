@@ -12,7 +12,7 @@ const TOOLS = [
   { id: "kdp", name: "KDP Occupied Series", url: "https://kdp-occupied-series.vercel.app", group: "products", desc: "7-book Kindle series dashboard" },
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
-  { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketing-integration-site.vercel.app", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
   { id: "glazecode", name: "GlazeCode", url: "https://glazecode.vercel.app", group: "products", desc: "The Viral Nail Design System — 25 decoded trends, DESIGN/APPLY/MONETIZE method" },
   { id: "quakeready", name: "QuakeReady™ — 90-Second Earthquake Survival System", url: "https://quakeready-glow.vercel.app", group: "products", desc: "8-PDF earthquake preparedness system — the 4-Phase Quake Protocol (Before→During→After→Recover)" },
   { id: "biteproof", name: "BiteProof", url: "https://biteproof.vercel.app", group: "products", desc: "Mosquito-Proof Home System — 8-PDF 4-Ring Defense for the record 2026 West Nile season" },
