@@ -5,7 +5,7 @@ const FIXES = {
     type: "restart",
     run: async () => {
       // Restart the fleet control service via the agent dashboard's own restart API
-      const r = await fetch("https://agent-dashboard-six-weld.vercel.app/api/restart", {
+      const r = await fetch("https://agent-dashboard-teal-psi.vercel.app/api/restart", {
         method: "POST",
         body: JSON.stringify({ agent: "jonas" }),
         headers: { "Content-Type": "application/json" }
