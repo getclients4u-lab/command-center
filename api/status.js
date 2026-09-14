@@ -13,6 +13,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "reelcraft", name: "ReelCraft™", url: "https://reelcraft-glow.vercel.app", group: "products", desc: "The Faceless Video Profit System — 8-part system to build a faceless AI-video channel that gets watched and paid" },
   { id: "cardvault", name: "CardVault™", url: "https://cardvault-glow.vercel.app", group: "products", desc: "The Card Flipper's Profit System — price, buy, grade & sell cards profitably" },
   { id: "scrollbreak", name: "ScrollBreak™", url: "https://scrollbreak-glow.vercel.app", group: "products", desc: "The 21-day system that breaks the scroll loop" },
   { id: "glazecode", name: "GlazeCode", url: "https://glazecode.vercel.app", group: "products", desc: "The Viral Nail Design System — 25 decoded trends, DESIGN/APPLY/MONETIZE method" },
