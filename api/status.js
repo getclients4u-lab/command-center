@@ -13,6 +13,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "agentleash", name: "AgentLeash™", url: "https://agentleash.vercel.app", group: "products", desc: "AI agent containment system: Permission Charter, Kill Switch, Run Log, Incident Scripts" },
   { id: "localloop", name: "LocalLoop", url: "https://localloop-glow.vercel.app", group: "products", desc: "Private AI you own — run a local model on your machine and cut the subscription meter" },
   { id: "agentdeck", name: "AgentDeck™", url: "https://agentdeck-glow.vercel.app", group: "products", desc: "Deploy your own 24/7 AI agent in one weekend (8-part digital system)" },
   { id: "facelessforge", name: "FacelessForge™", url: "https://facelessforge-glow.vercel.app", group: "products", desc: "Launch a faceless AI content channel (Find·Forge·Flood)" },
