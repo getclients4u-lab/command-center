@@ -13,6 +13,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "safegrid", name: "Safegrid™", url: "https://safegrid-glow.vercel.app", group: "products", desc: "The Agent Guardrail System — run autonomous AI agents without getting burned" },
   { id: "spymark", name: "SpyMark Defense™", url: "https://spymark.vercel.app", group: "products", desc: "Detect, strip & seal invisible AI tracking marks — then charge a trust premium." },
   { id: "humanmark", name: "HumanMark™", url: "https://humanmark-glow.vercel.app", group: "products", desc: "The Human-Made Proof System — prove your work is human-made and charge a premium" },
   { id: "agentleash", name: "AgentLeash™", url: "https://agentleash.vercel.app", group: "products", desc: "AI agent containment system: Permission Charter, Kill Switch, Run Log, Incident Scripts" },
