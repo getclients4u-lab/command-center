@@ -3,6 +3,7 @@ const TOOLS = [
   { id: "agent-dashboard", name: "Agent Dashboard", url: "https://agent-dashboard-teal-psi.vercel.app", group: "fleet", desc: "6-agent fleet status w/ 4-tier failover" },
   { id: "skill-landing", name: "Skill Landing Page", url: "https://openclaw-agent-dashboard-failover.vercel.app", group: "fleet", desc: "Agent Dashboard Failover skill funnel" },
   { id: "agent-ctl", name: "Agent Control API", url: "https://agent-dashboard-teal-psi.vercel.app/api/status", group: "fleet", desc: "Live fleet status (6 agents, 4-tier failover)" },
+  { id: "fleet-watch", name: "Fleet Watch", url: "https://fleet-watch-sigma.vercel.app", group: "fleet", desc: "Host-wide gateway/port monitor across all agents" },
   { id: "zarmi", name: "ZarMi Bra Boutique", url: "https://zarmibraboutique.vercel.app", group: "sites", desc: "Client storefront (espresso/mauve/ivory/gold)" },
   { id: "everlasting", name: "Everlasting Memories", url: "https://myeverlastingmemories.com", group: "sites", desc: "Client event business + 35 build tools" },
   { id: "futureready", name: "Future Ready US", url: "https://www.futurereadyus.com", group: "sites", desc: "Client site (IndexNow + GSC fixed)" },
@@ -13,6 +14,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "amber-derm", name: "Amber Dermatology", url: "https://amber-dermatology.vercel.app", group: "sites", desc: "Client dermatology site — 32 pages (24 procedures), MedicalProcedure + reviewedBy schema" },
   { id: "georise", name: "GeoRise™ — The AI Search Visibility System", url: "https://georise.vercel.app", group: "products", desc: "Get cited by ChatGPT, Perplexity & AI Overviews — the 8-part AEO system" },
   { id: "jevline", name: "Jevline™ — The Typed Decision Playbook", url: "https://jevline.vercel.app", group: "products", desc: "The 8-part discipline for shipping TypeSafe Jev typed decisions you can calibrate, gate, and trust" },
   { id: "safegrid", name: "Safegrid™", url: "https://safegrid-glow.vercel.app", group: "products", desc: "The Agent Guardrail System — run autonomous AI agents without getting burned" },
@@ -39,6 +41,8 @@ const TOOLS = [
   { id: "seo-launchpad", name: "SEO Launchpad", url: "https://seo-launchpad-eta.vercel.app", group: "tools", desc: "Audit · Optimize · Deploy console (permanent Vercel URL via tunnel proxy)" },
   { id: "empire-stack", name: "Empire Stack", url: "https://empire-stack.vercel.app", group: "tools", desc: "One URL, every tool — the complete local lead-gen machine hub" },
   { id: "empire-hq", name: "Empire HQ", url: "https://empire-hq-beta.vercel.app", group: "tools", desc: "Morning briefing — run-rate, cash, streak, daily move from LeadFlow + Commission Ledger CSVs" },
+  { id: "build-index", name: "Master Build Index", url: "https://master-build-index.vercel.app", group: "tools", desc: "Every Vercel project, auto-synced and grouped, with live status checks" },
+  { id: "ugc-collector", name: "UGC Collector", url: "https://ugc-collector.vercel.app", group: "tools", desc: "Guided testimonial collection — consent-logged submissions + approval dashboard" },
   { id: "affiliate-launch-radar", name: "Affiliate Launch Radar", url: "https://affiliate-launch-radar.vercel.app", group: "affiliate", desc: "Next 14 days of affiliate launches (Muncheye) — commission math, Claw-wave & whale alerts" },
 ];
 
