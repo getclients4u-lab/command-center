@@ -14,6 +14,7 @@ const TOOLS = [
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
   { id: "finreset", name: "Financial Reset Calculator", url: "https://structuredman-financial-reset.vercel.app", group: "products", desc: "StructuredMan post-divorce money reality check + 90-day plan" },
   { id: "marketing-integration", name: "Marketing Integration LLC", url: "https://marketingintegrationllc.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "glasslayer", name: "GlassLayer", url: "https://glasslayer.vercel.app", group: "products", desc: "The Glass Skin Protocol — decode PDRN, fix your layering, build real glass skin" },
   { id: "amber-derm", name: "Amber Dermatology", url: "https://amber-dermatology.vercel.app", group: "sites", desc: "Client dermatology site — 32 pages (24 procedures), MedicalProcedure + reviewedBy schema" },
   { id: "georise", name: "GeoRise™ — The AI Search Visibility System", url: "https://georise.vercel.app", group: "products", desc: "Get cited by ChatGPT, Perplexity & AI Overviews — the 8-part AEO system" },
   { id: "jevline", name: "Jevline™ — The Typed Decision Playbook", url: "https://jevline.vercel.app", group: "products", desc: "The 8-part discipline for shipping TypeSafe Jev typed decisions you can calibrate, gate, and trust" },
