@@ -47,6 +47,8 @@ const TOOLS = [
   { id: "build-index", name: "Master Build Index", url: "https://master-build-index.vercel.app", group: "tools", desc: "Every Vercel project, auto-synced and grouped, with live status checks" },
   { id: "ugc-collector", name: "UGC Collector", url: "https://ugc-collector.vercel.app", group: "tools", desc: "Guided testimonial collection — consent-logged submissions + approval dashboard" },
   { id: "affiliate-launch-radar", name: "Affiliate Launch Radar", url: "https://affiliate-launch-radar.vercel.app", group: "affiliate", desc: "Next 14 days of affiliate launches (Muncheye) — commission math, Claw-wave & whale alerts" },
+  { id: "packs-planner", name: "Weekly Planner Template Pack", url: "https://packs-deploy.vercel.app/planner/", group: "products", desc: "Ready-to-sell PDF + editable HTML weekly planner — $6 Stripe checkout, zero COGS" },
+  { id: "packs-logos", name: "Niche Logo / Brand Template Pack", url: "https://packs-deploy.vercel.app/logos/", group: "products", desc: "8 SVG logo templates (coffee, fitness, bakery, tech, beauty, real estate, lawn, pets) — $12 Stripe checkout" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
