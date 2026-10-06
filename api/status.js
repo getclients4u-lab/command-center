@@ -9,6 +9,8 @@ const TOOLS = [
   { id: "futureready", name: "Future Ready US", url: "https://www.futurereadyus.com", group: "sites", desc: "Client site (IndexNow + GSC fixed)" },
   { id: "sga", name: "SGA Advisers", url: "https://sgadvisers.vercel.app", group: "sites", desc: "Advisory firm site w/ team bios" },
   { id: "pssbl", name: "PSSBL Ventures", url: "https://www.pssblventuresllc.com", group: "sites", desc: "PSSBL Ventures LLC site" },
+  { id: "yestomidigital", name: "Yes To Mi Digital", url: "https://yestomidigital.com", group: "sites", desc: "Client site (AEO/SEO/GEO optimized)" },
+  { id: "weston-performing-arts", name: "Weston Performing Arts Booster Club", url: "https://westonperformingarts.org", group: "sites", desc: "Weston, CT K-12 music & theatre booster club" },
   { id: "breakout", name: "Breakout AI", url: "https://breakout-ai-one.vercel.app", group: "affiliate", desc: "Affiliate campaign (JVZoo $1,997 FE)" },
   { id: "kdp", name: "KDP Occupied Series", url: "https://kdp-occupied-series.vercel.app", group: "products", desc: "7-book Kindle series dashboard" },
   { id: "audiobooks", name: "Occupied Audiobooks", url: "https://occupied-series-audiobooks.vercel.app", group: "products", desc: "ACX audiobook download page" },
