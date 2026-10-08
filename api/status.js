@@ -52,6 +52,8 @@ const TOOLS = [
   { id: "affiliate-launch-radar", name: "Affiliate Launch Radar", url: "https://affiliate-launch-radar.vercel.app", group: "affiliate", desc: "Next 14 days of affiliate launches (Muncheye) — commission math, Claw-wave & whale alerts" },
   { id: "packs-planner", name: "Weekly Planner Template Pack", url: "https://packs-deploy.vercel.app/planner/", group: "products", desc: "Ready-to-sell PDF + editable HTML weekly planner — $6 Stripe checkout, zero COGS" },
   { id: "packs-logos", name: "Niche Logo / Brand Template Pack", url: "https://packs-deploy.vercel.app/logos/", group: "products", desc: "8 SVG logo templates (coffee, fitness, bakery, tech, beauty, real estate, lawn, pets) — $12 Stripe checkout" },
+  { id: "ipo-waiting-room", name: "The Waiting Room — IPO Desk", url: "https://ipo-waiting-room.vercel.app", group: "tools", desc: "Every S-1 on file with no pricing date — the IPO queue as a deli counter (471 waiting, median 398 days)" },
+  { id: "upd-trigger-clock", name: "UPD Trigger Clock", url: "https://upd-trigger-clock.vercel.app/", group: "tools", desc: "UPD trigger-window countdown" },
 ];
 
 async function probe(url, timeoutMs = 10000) {
