@@ -126,7 +126,7 @@ async function load() {
         const card = document.createElement("a");
         card.href = t.url; card.target = "_blank"; card.className = "card";
         const st = t.ok ? "up" : "down";
-        const stTxt = t.ok ? (t.code ? "UP " + t.code : "UP") : (t.err === "timeout" ? "TIMEOUT" : "DOWN");
+        const stTxt = t.ok ? (t.code ? "UP " + t.code : "UP") : (t.err === "timeout" ? "TIMEOUT" : ("DOWN" + (t.code ? " " + t.code : "")));
         card.innerHTML = `
           <div class="top"><h3>${t.name}</h3><span class="status ${st}">${stTxt}</span></div>
           <p>${t.desc}</p>
@@ -153,6 +153,11 @@ async function diagnose(id, url) {
   try {
     const r = await fetch(`/api/diagnose?id=${id}&url=${encodeURIComponent(url)}`, { cache: "no-store" });
     const d = await r.json();
+    if (!r.ok || d.error) {
+      title.textContent = "🔧 Diagnose unavailable";
+      body.innerHTML = `<div class="verdict down"><b>❌ CANNOT DIAGNOSE</b> — ${d.error || ("HTTP " + r.status)}</div><div class="row"><div class="v">The diagnose API rejected this card. The link status shown above is still live-checked on every load.</div></div><div class="actions"><button class="btn ghost" onclick="document.getElementById('modalBg').classList.remove('open')">Close</button></div>`;
+      return;
+    }
     title.textContent = `🔧 ${d.host}`;
     const vc = d.verdict || {};
     const verdictCls = vc.status === "ok" ? "ok" : (vc.status === "degraded" ? "degraded" : "down");

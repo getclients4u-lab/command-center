@@ -38,7 +38,7 @@ async function roundRobinProbe(url, n = 5) {
     const started = Date.now();
     try {
       const r = await fetch(url, { signal: ctrl.signal, redirect: "follow" });
-      results.push({ ok: r.ok || r.status < 500, code: r.status, ms: Date.now() - started });
+      results.push({ ok: r.ok, code: r.status, ms: Date.now() - started });
     } catch (e) {
       results.push({ ok: false, err: e.name === "AbortError" ? "timeout" : "refused", ms: Date.now() - started });
     } finally {
@@ -52,12 +52,15 @@ export default async function handler(req, res) {
   res.setHeader("Access-Control-Allow-Origin", "*");
   res.setHeader("Cache-Control", "no-store");
   const id = req.query.id;
-  const tool = KNOWN[id];
-  if (!tool) return res.status(400).json({ error: "unknown tool id" });
-
   const toolUrl = req.query.url;
+  if (!toolUrl) return res.status(400).json({ error: "url required" });
   let host = "";
   try { host = new URL(toolUrl).hostname; } catch { return res.status(400).json({ error: "bad url" }); }
+
+  // Any card in the dashboard can be diagnosed. The curated map below just adds
+  // provider-specific hints; when an id isn't in it we derive a generic descriptor
+  // from the hostname so the "Diagnose & Fix" button never fails with 400.
+  const tool = KNOWN[id] || { type: /\.vercel\.app$/i.test(host) ? "vercel" : "domain" };
 
   const report = { id, host, type: tool.type, checks: [] };
 
@@ -72,8 +75,9 @@ export default async function handler(req, res) {
     report.roundRobin = probes;
     const okCount = probes.filter(p => p.ok).length;
     const failCount = probes.length - okCount;
-    // heuristic: flag suspicious IP ranges (old hosts/Wix leftovers on a Vercel domain)
-    const suspicious = (dns.ips || []).filter(ip => /^185\.230\./.test(ip) || /^216\.198\./.test(ip));
+    // 185.230/16 is a legacy (pre-Vercel) range that strands some domains.
+    // NOTE: 216.198.79/24 is a CURRENT Vercel anycast block — do NOT flag it.
+    const suspicious = (dns.ips || []).filter(ip => /^185\.230\./.test(ip));
     report.checks.push({
       name: "Round-robin health (10 probes)",
       ok: failCount === 0,
@@ -104,7 +108,7 @@ export default async function handler(req, res) {
   try {
     const r = await fetch(toolUrl, { signal: ctrl.signal, redirect: "follow" });
     clearTimeout(t);
-    report.http = { ok: r.ok || r.status < 500, code: r.status, finalUrl: r.url, ms: Date.now() - started };
+    report.http = { ok: r.ok, code: r.status, finalUrl: r.url, ms: Date.now() - started };
   } catch (e) {
     clearTimeout(t);
     report.http = { ok: false, code: 0, err: e.name === "AbortError" ? "timeout" : "unreachable" };

@@ -63,7 +63,9 @@ async function probe(url, timeoutMs = 10000) {
   try {
     const res = await fetch(url, { signal: ctrl.signal, redirect: "follow" });
     clearTimeout(t);
-    return { ok: res.ok || res.status < 500, code: res.status, ms: Date.now() - started };
+    // Only 2xx counts as UP. A 404/401/403/5xx means the link is broken for real visitors,
+    // so it must report DOWN (previously any status < 500 was counted as ok).
+    return { ok: res.ok, code: res.status, ms: Date.now() - started };
   } catch (e) {
     clearTimeout(t);
     return { ok: false, code: 0, ms: Date.now() - started, err: e.name === "AbortError" ? "timeout" : "unreachable" };
